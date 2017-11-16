@@ -1,0 +1,125 @@
+$dark-primary: #455A64
+$primary: #607D8B
+$ligth-primary: #CFD8DC
+$accent: #03A9F4
+$icons: #FFFFFF
+$text: #212121 
+$text-secondary: #757575
+$devider: #BDBDBD
+
+body
+	margin: 0px
+	padding: 0px
+	background: $primary
+	border-radius: 10px
+	font-family: Arial
+	-webkit-user-select: none
+	cursor: default
+.hidden
+	opacity: 0
+.bar
+	animation: perfomance 1s linear
+	background: $dark-primary
+	color: $icons
+	text-align: right
+	-webkit-app-region: drag
+@keyframes perfomance
+	0%
+		opacity: 0
+	50%
+		opacity: 0
+	100%
+		opacity: 1
+.bar-button
+	display: inline-block
+	padding: 8px
+	border-radius: 2px
+	cursor: pointer
+	-webkit-app-region: no-drag
+.battery-container
+	width: 250px
+	margin: 50px
+	position: relative
+	transition: all 0.3s
+.battery-cap
+	border: 1px solid $devider
+	border-bottom: 0px
+	border-radius: 20px 20px 0px 0px
+	height: 50px
+	width: 160px
+	left: 45px
+	position: relative
+	overflow: hidden
+.electro
+	background: $accent
+	position: relative
+	width: 160px
+	height: 30px
+	left: 0px
+	transition: 0.3s all
+	animation: charging 3s infinite linear
+
+@keyframes charging
+	0%
+		top: -30px
+	100%
+		top: 50px
+.battery-block
+	border: 1px solid $devider
+	border-radius: 20px
+	height: 400px
+	overflow: hidden
+.energy-number
+	z-index: 1
+	position: absolute
+	bottom: 155px
+	text-align: center
+	font-size: 100px
+	width: 250px
+	&.dark
+		color: $text
+	&.light
+		color: $icons
+.energy
+	background: $accent
+	position: relative
+	height: 100%
+	top: 0px
+	transition: all 1s
+.energy-waves
+	background: $primary
+	position: absolute
+	border-radius: 40%
+	width: 800px
+	height: 800px
+	left: -275px
+	transition: all 1s
+	animation: rotation 20s infinite linear
+@keyframes rotation
+	0%
+		transform: rotate(0deg)
+	100%
+		transform: rotate(360deg)
+.no-animation
+	animation: none !important
+.energy.green
+	background: #00c853
+.energy.blue
+	background: #2962ff
+.energy.yellow
+	background: #ffea00
+.energy.red
+	background: #f44336
+
+	// overflow: hidden
+// .energy-waves
+// 	background: $accent
+// 	overflow: hidden
+// .energy-waves:before
+// 	background: $accent
+// 	content: 'h'
+// 	position: relative
+// 	top: -100px
+// 	width: 100px
+// 	height: 100px
+// 	display: block

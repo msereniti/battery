@@ -1,0 +1,35 @@
+{
+  "name": "batteryapp",
+  "version": "1.0.0",
+  "description": "App to get info about your laptop battery",
+  "main": "main.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "battery",
+    "electron"
+  ],
+  "author": "phyton",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-jade": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^3.1.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-jsx": "^0.1.8",
+    "grunt-react": "^0.12.3"
+  },
+  "dependencies": {
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-jade": "^1.0.0",
+    "grunt-contrib-uglify": "^3.1.0",
+    "grunt-jsx": "^0.1.8",
+    "grunt-react": "^0.12.3",
+    "grunt-contrib-watch": "^1.0.0",
+    "load-grunt-tasks": "^3.5.2"
+  }
+}
